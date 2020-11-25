@@ -16,6 +16,7 @@ function App() {
 
   const [search, setSearch] = useState("");
 
+  //Fonction appelant l'API avec l'URL passée en paramètre
   const updateMovies = (URL) =>{
     fetch(URL)
       .then(res => res.json())
@@ -32,11 +33,12 @@ function App() {
       );
   }
 
-
+  //Au chargement de la page -> Récupération des 20 films les plus populaires
   useEffect(() => {
     updateMovies(API_DISCOVER_QUERY);
   }, [])
 
+  //Lorsque l'utilisateur lance une recherche -> Récupération des films correspondants à la valeur entrée
   const handleOnSubmit = () =>{
     setIsLoading(true);
     if(search){
