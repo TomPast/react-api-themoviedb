@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Movies } from './components/Movies';
 
 import './App.css';
 
@@ -16,7 +17,6 @@ function App() {
       .then(res => res.json())
       .then(
         (result) => {
-          console.log(result);
           setIsLoading(false);
           setMovies(result.results);
         },
@@ -27,19 +27,9 @@ function App() {
       )
   }, [])
 
-  if(error) {
-    return <p> Erreur de chargement </p>;
-  }else if(isLoading) {
-    return <p> Chargement... </p>;
-  }else{
-    return (
-      <div>
-        {movies.map(movie => (
-          <p key={movie.id}> {movie.name} </p>
-        ))}
-      </div>
-    );
-  }
+  return (
+      <Movies error={error} isLoading={isLoading} movies={movies} />
+  );
 }
 
 export default App;

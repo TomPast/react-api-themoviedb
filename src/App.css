@@ -1,38 +1,89 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background: rgb(22,25,29);
+  font-family: 'Roboto', sans-serif;
+}
+
+.movies{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Card Movie Style */
+.card_movie{
+  margin: 20px;
+  background: rgb(42,45,49);
+  color: white;
+  width: 300px;
+  position: relative;
+  border-radius: 7px;
+  box-shadow: 0px 0px 20px black;
+  overflow: hidden;
+  transition: transform 0.15s ease-in-out;
+}
+
+.card_movie:hover{
+  transform: scale(1.04);
+}
+
+.card_thumb img{
+  width:100%;
+}
+
+.movie_vote{
+  position: absolute;
+  top:10px;
+  right:10px;
+  width: 45px;
+  height: 45px;
+  background:#c82d47;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  font-weight: bold;
+  box-shadow: 0px 0px 20px black;
+}
+
+.card_body{
+  margin: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.movie_title{
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.movie_date{
+  margin:0;
+  font-size: 0.85rem;
+  color: grey;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card_text{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: 0;
+  padding: 0 10px;
+  bottom:60px;
+  background:rgb(62,65,69);
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 -5px 10px -5px black;
+  opacity:0;
+  transition: opacity 0.15s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.card_movie:hover .card_text{
+  opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card_movie:hover .card_thumb{
+  opacity: 0.5;
+
 }
