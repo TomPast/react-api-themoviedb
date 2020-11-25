@@ -2,8 +2,16 @@ import React from 'react';
 
 const IMAGE_URL = 'https://image.tmdb.org/t/p/w500/';
 
-
+//Composant affichant les informations d'un film sous forme de card
 export function MovieCard(movie) {
+
+  let title = movie.original_title;
+  if(movie.original_title.length > 25){
+    title = movie.original_title.substring(0,25)+'...';
+  }
+
+  //Changement du format de la date (dd/mm/yyyy)
+  const formated_date = movie.release_date.split("-").reverse().join("/");
 
   return (
     <article className="card_movie">
@@ -15,8 +23,8 @@ export function MovieCard(movie) {
       </div>
 
       <div className="card_body">
-        <h3 className="movie_title"> {movie.name} </h3>
-        <p className="movie_date"> Sorti le {movie.first_air_date} </p>
+        <h3 className="movie_title"> {title} </h3>
+        <p className="movie_date"> Sorti le {formated_date} </p>
       </div>
 
       <div className="card_text">
