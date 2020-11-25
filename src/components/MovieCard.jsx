@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './MovieCard.css';
 const IMAGE_URL = 'https://image.tmdb.org/t/p/w500/';
 
 //Composant affichant les informations d'un film sous forme de card

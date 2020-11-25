@@ -1,11 +1,15 @@
 import React from 'react';
 import { MovieCard } from './MovieCard';
+import './Movies.css';
 
+//Composant qui gère les erreurs, le chargement et la création de MovieCard par film
 export function Movies({error, isLoading, movies}) {
+
+
   if(error) {
-    return <p> Erreur de chargement, veuillez réessayer </p>;
+    return <h3> Erreur de chargement, veuillez réessayer </h3>;
   }else if(isLoading) {
-    return <p> Chargement... </p>;
+    return <h3 className="info_text"> Chargement... </h3>;
   }
 
   return (

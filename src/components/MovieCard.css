@@ -1,0 +1,77 @@
+/* Movie Card Style */
+.card_movie{
+  margin: 20px;
+  background: rgb(42,45,49);
+  color: white;
+  width: 300px;
+  position: relative;
+  border-radius: 7px;
+  box-shadow: 0px 0px 20px black;
+  overflow: hidden;
+  transition: transform 0.15s ease-in-out;
+}
+
+.card_movie:hover{
+  transform: scale(1.04);
+}
+
+.card_thumb img{
+  height: 400px;
+  width:100%;
+}
+
+.movie_vote{
+  position: absolute;
+  top:10px;
+  right:10px;
+  width: 45px;
+  height: 45px;
+  background:#c82d47;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  font-weight: bold;
+  box-shadow: 0px 0px 20px black;
+}
+
+.card_body{
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.movie_title{
+  margin: 0;
+}
+
+.movie_date{
+  margin:0;
+  font-size: 0.85rem;
+  color: grey;
+}
+
+.card_text{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: 0;
+  padding: 0 10px;
+  bottom:60px;
+  background:rgb(62,65,69);
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 -5px 10px -5px black;
+  opacity:0;
+
+  transition: opacity 0.15s ease-in-out;
+}
+
+.card_text p{
+  font-size: 0.85rem;
+}
+.card_movie:hover .card_text{
+  opacity: 1;
+}
+
+.card_movie:hover .card_thumb{
+  opacity: 0.5;
+}
