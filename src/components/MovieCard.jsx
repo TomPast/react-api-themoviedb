@@ -1,5 +1,6 @@
 import React from 'react';
 import './MovieCard.css';
+import noPicture from'../img/no-picture.jpg';
 const IMAGE_URL = 'https://image.tmdb.org/t/p/w500/';
 
 //Composant affichant les informations d'un film sous forme de card
@@ -15,11 +16,11 @@ export function MovieCard(movie) {
   if(movie.release_date){
     formated_date = movie.release_date.split("-").reverse().join("/");
   }
-  
+
   return (
     <article className="card_movie">
       <header className="card_thumb">
-        <img src={IMAGE_URL+movie.poster_path} alt=""/>
+        <img src={movie.poster_path ? IMAGE_URL+movie.poster_path : noPicture} alt=""/>
       </header>
       <div className="movie_vote">
         <span> {movie.vote_average} </span>
