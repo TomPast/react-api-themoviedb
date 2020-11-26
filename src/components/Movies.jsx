@@ -11,9 +11,13 @@ export function Movies({error, isLoading, movies}) {
   }else if(isLoading) {
     return <h3 className="info_text"> Chargement... </h3>;
   }
-
+  if(movies.length == 0){
+    return <h3 className="info_text">Oh non, il n'y a pas de résultat... </h3>;
+  }
   return (
     <div className="movies">
+
+
       {movies.map(movie => (
         <MovieCard key={movie.id} {...movie} />
       ))}
