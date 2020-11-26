@@ -8,6 +8,8 @@ J'ai réussi à afficher la liste des 20 films les plus populaires en premier. E
 * MovieCard -> Récupère les informations d'un film et les affiche sous forme de card (titre, date de sortie, note, image de l'affiche et résumé du film)
 * SearchMovieBar -> Champs permettant de rechercher des films par leurs noms
 
+![Preview](https://www.tompastor.fr/img-github/preview.jpg)
+
 ## Available Scripts
 
 In the project directory, you can run:
