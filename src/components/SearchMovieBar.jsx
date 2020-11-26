@@ -1,6 +1,5 @@
 import React from 'react';
 import './SearchMovieBar.css';
-import searchIcon from'../img/search-icon.svg';
 
 
 //Composant affichant les informations d'un film sous forme de card

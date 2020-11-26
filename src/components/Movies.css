@@ -1,9 +1,7 @@
 /* Movies Style */
 
 .info_text{
-  position: absolute;
-  margin:auto;
-  text-align: center;
+  
   font-size: 2rem;
   color: white;
 }

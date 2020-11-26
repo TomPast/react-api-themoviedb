@@ -11,8 +11,11 @@ export function MovieCard(movie) {
   }
 
   //Changement du format de la date (dd/mm/yyyy)
-  const formated_date = movie.release_date.split("-").reverse().join("/");
-
+  let formated_date = '';
+  if(movie.release_date){
+    formated_date = movie.release_date.split("-").reverse().join("/");
+  }
+  
   return (
     <article className="card_movie">
       <header className="card_thumb">
