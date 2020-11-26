@@ -4,9 +4,9 @@ Projet réalisé par Tom Pastor dans le cadre d'un exercice technique pour canal
 J'ai réussi à afficher la liste des 20 films les plus populaires en premier. Ensuite, j'ai ajouté une fonctionnalité de recherche de films.
 
 3 composants :
--Movie -> Gère le chargement, les erreurs dû à la récupération des films par l'API et affiche le résultat avec les composants MovieCard
--MovieCard -> Récupère les informations d'un film et les affiche sous forme de card (titre, date de sortie, note, image de l'affiche et résumé du film)
--SearchMovieBar -> Champs permettant de rechercher des films par leurs noms
+* Movie -> Gère le chargement, les erreurs dû à la récupération des films par l'API et affiche le résultat avec les composants MovieCard
+* MovieCard -> Récupère les informations d'un film et les affiche sous forme de card (titre, date de sortie, note, image de l'affiche et résumé du film)
+* SearchMovieBar -> Champs permettant de rechercher des films par leurs noms
 
 ## Available Scripts
 
