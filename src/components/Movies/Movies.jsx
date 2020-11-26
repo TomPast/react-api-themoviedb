@@ -11,7 +11,7 @@ export function Movies({error, isLoading, movies}) {
   }else if(isLoading) { //En train de charger les films
     return <h3 className="info_text"> Chargement... </h3>;
   }
-  if(movies.length == 0){ //Pas de résultat
+  if(movies.length === 0){ //Pas de résultat
     return <h3 className="info_text">Oh non, il n'y a pas de résultat... </h3>;
   }
 
