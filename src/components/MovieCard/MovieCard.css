@@ -37,7 +37,6 @@
 .card_body{
   margin: 10px;
   text-align: center;
-  align-items: center;
 }
 
 .movie_title{
@@ -52,22 +51,20 @@
 
 .card_text{
   position: absolute;
-  left: 0px;
-  right: 0px;
+  bottom:60px;
   margin: 0;
   padding: 0 10px;
-  bottom:60px;
   background:rgb(62,65,69);
   border-radius: 5px 5px 0 0;
   box-shadow: 0 -5px 10px -5px black;
   opacity:0;
-
   transition: opacity 0.15s ease-in-out;
 }
 
 .card_text p{
   font-size: 0.85rem;
 }
+
 .card_movie:hover .card_text{
   opacity: 1;
 }

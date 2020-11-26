@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Movies } from './components/Movies';
-import { SearchMovieBar } from './components/SearchMovieBar';
+import { Movies } from './components/Movies/Movies';
+import { SearchMovieBar } from './components/SearchMovieBar/SearchMovieBar';
 import mainLogo from'./img/my-movies-logo.png';
 import './App.css';
 

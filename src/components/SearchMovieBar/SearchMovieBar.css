@@ -2,11 +2,11 @@
 
 .search_bar{
   height: 45px;
+  width: 250px;
   background: rgb(45,47,52);
   border: none;
   border-radius: 7px 0 0 7px;
   padding: 5px 10px;
-  width: 250px;
   caret-color: red;
   color: white;
   font-size: 1.1rem;
@@ -31,22 +31,22 @@ button:focus{
   outline-width: 0;
 }
 
-.svg-icon {
+.search_icon {
   width: 1.5rem;
   height: 1.5rem;
   text-align: center;
   vertical-align: middle;
 }
 
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
+.search_icon path,
+.search_icon polygon,
+.search_icon rect {
   fill: white;
   transition: fill 0.2s ease-in-out;
 }
 
-button:hover .svg-icon path,
-.svg-icon polygon,
-.svg-icon rect{
+button:hover .search_icon path,
+.search_icon polygon,
+.search_icon rect{
   fill: red;
 }
